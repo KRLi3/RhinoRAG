@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Source docs are third-party (McNeel RhinoCommon/Grasshopper/Eto XML, etc.).
+# Not redistributed in the repo. The maintainer keeps them locally to build the
+# index; end users download the prebuilt index from GitHub Releases.
+docs/
+
+# Prebuilt index — large binary, distributed via GitHub Releases, not git.
+db/
+
+# Release artifacts produced by build_release.py
+dist/
+
+# Local-only
+.mcp.json
+_probe.py
+_rss_tmp/

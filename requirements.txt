@@ -1,0 +1,8 @@
+chromadb
+sentence-transformers
+mcp
+requests
+beautifulsoup4
+lxml
+bm25s
+einops

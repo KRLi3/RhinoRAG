@@ -11,8 +11,7 @@ REM    3. 解压到本文件夹
 REM  完成后请按 README.md 的"使用方法"把 MCP 配置粘贴到你的 AI 客户端。
 REM ==========================================================================
 
-REM
-set DATA_URL=https://github.com/USER/RhinoRAG/releases/latest/download/rhino-rag-data.zip
+set DATA_URL=https://github.com/KRLi3/RhinoRAG/releases/latest/download/rhino-rag-data.zip
 
 cd /d "%~dp0"
 echo.

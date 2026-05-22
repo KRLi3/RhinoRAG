@@ -64,8 +64,9 @@ C# tasks.
 
 **1. 下载并安装**
 
-1. 从 GitHub Releases 下载最新的 release 压缩包，解压到任意文件夹。
-   建议路径不要包含中文或空格，例如 `C:/Tools/RhinoRAG`。
+1. 到 GitHub Releases 页面，只下载 **`RhinoRAG-v1.0.zip`** 这一个文件，解压到任意文件夹。
+   （页面里那个体积很大的 `rhino-rag-data.zip` 不用手动下，安装时会自动获取。）
+   建议解压路径不要包含中文或空格，例如 `C:/Tools/RhinoRAG`。
 2. 确认电脑已安装 **Python 3.10+**。安装 Python 时请勾选 **Add Python to PATH**。
    没装的话先到 <https://www.python.org/downloads/> 安装。
 3. 双击 `install.bat`。它会自动创建 `.venv`、安装依赖，并下载预构建的索引和模型数据。
@@ -114,8 +115,9 @@ For Rhino / Grasshopper users who don't want to set up Python or build the index
 
 **1. Download & install**
 
-1. Download the latest release zip from GitHub Releases and unzip it anywhere
-   (avoid spaces / non-ASCII in the path, e.g. `C:/Tools/RhinoRAG`).
+1. On the GitHub Releases page, download only **`RhinoRAG-v1.0.zip`** and unzip it anywhere.
+   (Ignore the large `rhino-rag-data.zip` — the installer fetches it automatically.)
+   Avoid spaces / non-ASCII in the path, e.g. `C:/Tools/RhinoRAG`.
 2. Make sure **Python 3.10+** is installed, with **Add Python to PATH** checked.
    Get it at <https://www.python.org/downloads/> if needed.
 3. Double-click `install.bat`. It creates `.venv`, installs dependencies, and downloads the

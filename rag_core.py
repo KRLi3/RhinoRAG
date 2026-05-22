@@ -78,13 +78,13 @@ LIBRARIES = {
 # Maps a high-level task to the libraries that should be searched for it.
 # None means "search everything available". Used by MCP-facing helpers.
 TASK_SCOPE = {
-    "rhino_python":  ["rhinoscriptsyntax", "rhinocommon"],
-    "gh_python":     ["rhinoscriptsyntax", "rhinocommon", "grasshopper"],
-    "gh_csharp":     ["rhinocommon", "grasshopper"],
-    "gha_dev":       ["rhinocommon", "grasshopper", "gh_io"],
+    "rhino_python": ["rhinoscriptsyntax", "rhinocommon"],
+    "gh_python": ["rhinoscriptsyntax", "rhinocommon", "grasshopper"],
+    "gh_csharp": ["rhinocommon", "grasshopper"],
+    "gha_dev": ["rhinocommon", "grasshopper", "gh_io"],
     "plugin_csharp": ["rhinocommon"],
-    "ui":            ["eto", "rhinocommon"],
-    "auto":          None,
+    "ui": ["eto", "rhinocommon"],
+    "auto": None,
 }
 
 SUPPORTED_EXTS = (
@@ -143,7 +143,7 @@ def available_libraries():
 
 
 def stable_id(key: str) -> str:
-    return hashlib.md5(key.encode("utf-8", errors="ignore")).hexdigest()
+    return hashlib.md5(key.encode("utf-8", errors="ignore"), usedforsecurity=False).hexdigest()
 
 
 def read_file(path: str) -> str:
